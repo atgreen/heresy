@@ -28,8 +28,7 @@
 
 
 (asdf:defsystem :heresy
-;  :version "0.0.1"
-  :serial t
-  :components ((:file "packages")
-;               (:file "specials")
-               (:file "heresy")))
+                :serial t
+                :depends-on (:bordeaux-threads)
+                :components ((:file "packages")
+                             (:file "heresy")))
